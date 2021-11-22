@@ -1,0 +1,68 @@
+-- phpMyAdmin SQL Dump
+-- version 4.1.14
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: 22-Nov-2021 às 22:21
+-- Versão do servidor: 5.6.17
+-- PHP Version: 5.5.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `livro_adm`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `livros`
+--
+
+CREATE TABLE IF NOT EXISTS `livros` (
+  `Id_livro` int(11) NOT NULL AUTO_INCREMENT,
+  `Id_usuario` int(11) NOT NULL,
+  `Nome` varchar(255) NOT NULL,
+  `Autor` varchar(255) NOT NULL,
+  `Data_de_cadastro` date NOT NULL,
+  PRIMARY KEY (`Id_livro`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=11 ;
+
+--
+-- Extraindo dados da tabela `livros`
+--
+
+INSERT INTO `livros` (`Id_livro`, `Id_usuario`, `Nome`, `Autor`, `Data_de_cadastro`) VALUES
+(1, 1, 'A Riqueza das Nacoes', 'Adam Smith', '2021-11-22'),
+(3, 1, 'Comece pelo porque', 'Simon Sinek', '2021-11-22'),
+(4, 1, 'Comece pelo porque', 'Simon Sinek', '2021-11-22'),
+(5, 0, 'Comece pelo porque', 'Simon Sinek', '2021-11-22'),
+(6, 0, 'Comece pelo porque', 'Simon Sinek', '2021-11-22'),
+(7, 0, 'Turma da monica', 'Mauricio de Souza', '2021-11-22'),
+(8, 0, 'Turma da monica', 'Mauricio de Souza', '2021-11-22'),
+(9, 0, 'Turma da monica', 'Mauricio de Souza', '2021-11-22'),
+(10, 2, 'Turma da monica', 'Mauricio de Souza', '2021-11-22');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `ID_Usuario` int(120) NOT NULL AUTO_INCREMENT,
+  `Usuario` varchar(120) NOT NULL,
+  `Senha` varchar(32) NOT NULL,
+  `Nivel` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID_Usuario`),
+  UNIQUE KEY `ID_Usuario` (`ID_Usuario`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`ID_Usuario`, `Usuario`, `Senha`, `Nivel`) VALUES
+(1, 'danielramon', 'adm123', 'administrador'),
+(2, 'joao', 'cliente123', 'cliente');

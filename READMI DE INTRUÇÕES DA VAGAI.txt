@@ -1,0 +1,63 @@
+ 
+VAGA ESCOLHIDA: Analista Desenvolvedor 
+LINGUAGEM ESCOLHIDA: PHP
+
+
+
+
+
+1.       Orientações Gerais 
+
+
+ 
+
+Leia ATENTAMENTE as orientações descritas nesta seção. Para a realização deste desafio, será necessário seguir os passos indicados abaixo: 
+
+ 
+
+Para realizar o desafio, você deverá implementar as funcionalidades referentes ao seu nível escolhido, acumulando as funcionalidades quanto maior o nível a qual você está aplicando. Por exemplo, se você estiver inscrito para realizar o desafio nivel 3, você também deverá implementar as funcionalidades dos níveis 1 e 2. 
+
+O seu projeto deverá ser hospedado em um repositório do GitHub em uma branch chamada desafio-techlead. O link deverá ser enviado no e-mail resposta deste desafio. 
+
+O projeto deverá conter um arquivo chamado README localizado na raiz do projeto contendo as informações requisitadas durante este desafio. Você deverá começar o arquivo informando o cargo e a linguagem escolhida no passo anterior a este teste. 
+
+Você poderá utilizar de frameworks, justificando no README a sua escolha. A linguagem de programação deverá ser compatível com o cargo escolhido. 
+
+Busque fazer um código limpo, organizado, simples e eficiente. 
+
+ 
+
+2.       Introdução 
+
+ 
+
+Neste desafio, você deverá desenvolver um sistema para gerenciamento de uma biblioteca. O sistema deverá ter dois perfis de usuário: um administrador, capaz de cadastrar / editar / excluir todos os livros (nome, autor, data de cadastro) e um perfil cliente que também pode cadastrar livros, porém só pode editar e excluir os livros que cadastrou, sendo que os demais cadastrados no sistema ele somente conseguirá visualizar.  
+
+A cada nível, o sistema deverá ser incrementado de acordo com as seguintes regras descritas abaixo: 
+
+ 
+
+3.       Desafio – Nível 1 
+
+ 
+
+Deve conter uma tela inicial de login  
+Na tela de login deverão existir links de cadastre-se e esqueci minha senha para que novos usuários possam ser cadastrados e antigos usuários possam recuperar o acesso.  
+Esse cadastro será sempre de usuário do perfil cliente, já o perfil administrador deve ser persistido diretamente no banco de dados, assim que a aplicação subir.  
+O usuário de perfil administrador terá uma tela de gerência de livros, no qual ele poderá cadastrar / editar / excluir / listar / detalhar os livros.  
+O usuário de perfil cliente terá uma tela que poderá consultar a lista completa de livros, podendo cadastrar novos livros, podendo, no entanto, editar e excluir somente aqueles cadastrados por ele. 
+
+ 
+OBS: Para este nível você deverá incluir no README o dump do banco de dados e a carga inicial de dados nas tabelas. Se preferir, pode-se utilizar algum versionador de banco de dados dentro da própria aplicação. Em ambos os casos, deve-se incluir no arquivo as informações para a configuração da base. 
+
+ 
+
+Recomendações e tecnologias: 
+
+É recomendável a utilização de Spring para o back-end e Angular para o front-end, porém não são obrigatórias, caso não tenha a expertise adequada em algumas das tecnologias acima, podem utilizar outra abordagem para resolver os problemas.
+É recomendável enviar o código da aplicação para o github e enviar o link da aplicação por e-mail. 
+ 
+
+Seja criativo e nos proponha a melhor solução! 
+
+ 
