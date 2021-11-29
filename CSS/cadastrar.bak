@@ -1,0 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Verdana;
+	background: linear-gradient(to right, #2f3031, #4d5558, #387480);
+}

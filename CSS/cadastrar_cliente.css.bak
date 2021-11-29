@@ -1,0 +1,20 @@
+form input[type=password] {
+	width: 100%;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+form input[type=submit] {
+	width: 100%;
+	font-size: 22px;
+	margin-bottom: 20px;
+	background-color: #909;
+	color: #FFF;
+	padding: 5px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+.links {
+	display: flex;
+	justify-content: space-between;
+}

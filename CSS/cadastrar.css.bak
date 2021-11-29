@@ -1,0 +1,10 @@
+﻿.margin-left{
+ margin-left:55px;
+}
+.margin-right{
+ margin-right:55px;
+}
+.purple{
+	color:#FFF !important;
+}
+
